@@ -1,10 +1,11 @@
 package com.oop;
 
 import com.oop.lab1.*;
+import com.oop.lab2.*;
 
 public class Main {
     public static void main(String[] args) {
-	// write your code here
+	// LAB 1 Code To Execture
         System.out.println("HW");
 
         // Base level 5 || 6
@@ -36,6 +37,48 @@ public class Main {
         System.out.println("1st University media: " + univ.GetMediumMark());
         System.out.println("2nd University media: " + univ1.GetMediumMark());
         System.out.println("3rd University media: " + univ2.GetMediumMark());
+        // LAB 2 Code To Exectute
+        // 5 || 6
+        // Without parameters
+        Box firstBox = new Box();
+        // With one parameter
+        Box secondBox = new Box(5);
+        // With 3 parameters
+        Box thirdBox = new Box(5, 6, 7);
 
+        // 8 || 9
+        // Without parameters
+        Queue q1 = new Queue();
+        q1.Push(5); q1.Push(6); q1.Push(10);
+        q1.Pop(); // Pop first
+        q1.Pop(); // Pop second
+        System.out.println("Last element of q1 " + q1.Pop()); // Pop third (and last)
+
+        // With parameters
+        Queue q2 = new Queue(10);
+        q2.Push(33); q2.Push(66);
+        q2.Pop(); // Pop first
+        System.out.println("Last element of q2 " + q2.Pop()); // Pop second (and last)
+
+        // 9 || 10
+        // Box math
+        System.out.println("Volume/Surface area for first box");
+        System.out.println(firstBox.CalculateVolume());
+        System.out.println(firstBox.CalculateSurfaceArea());
+
+        System.out.println("Volume/Surface area for second box");
+        System.out.println(secondBox.CalculateVolume());
+        System.out.println(secondBox.CalculateSurfaceArea());
+
+        System.out.println("Volume/Surface area for third box");
+        System.out.println(thirdBox.CalculateVolume());
+        System.out.println(thirdBox.CalculateSurfaceArea());
+
+        // Queue statuses
+        q1.Push(200);
+        System.out.println("Is q1 empty? " + q1.IsEmpty());
+        System.out.println("Is q1 full? " + q1.IsFull());
+        System.out.println("Is q2 empty? " + q2.IsEmpty());
+        System.out.println("Is q2 full? " + q2.IsFull());
     }
 }
