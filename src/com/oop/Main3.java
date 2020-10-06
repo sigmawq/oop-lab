@@ -1,3 +1,7 @@
+/*
+Main file to run LAB 3
+ */
+
 package com.oop;
 import com.oop.lab3.*;
 
