@@ -35,7 +35,8 @@ public class Main3 {
         System.out.println(textManipulator.GetSentenceAmount());
 
         // Advanced (7 || 8)
-        System.out.println("Amount of vowels/consonants");
+        System.out.println("Amount of letters/vowels/consonants");
+        System.out.println(textManipulator.GetLettersAmount());
         System.out.println(textManipulator.GetVowelsAmount());
         System.out.println(textManipulator.GetConsonantsAmount());
 

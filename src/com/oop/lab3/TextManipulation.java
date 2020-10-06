@@ -155,6 +155,16 @@ public class TextManipulation {
         }
         return vowelsConsonants;
     }
+    public int GetLettersAmount(){
+        int letters = 0;
+        for (int i = 0; i < text.length(); i++){
+            char currChr = text.charAt(i);
+            if (isLetter(currChr)){
+                letters++;
+            }
+        }
+        return letters;
+    }
     public void PrintMostCommonWordsAndTheLongestWord(){
         Object[] words = mostCommonWordsListMap.keySet().toArray();
         System.out.println(
