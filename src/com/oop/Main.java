@@ -1,3 +1,7 @@
+/*
+Main for LAB 1 and LAB 2
+*/
+
 package com.oop;
 
 import com.oop.lab1.*;
