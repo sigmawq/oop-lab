@@ -167,7 +167,6 @@ public class TextManipulation {
         int bestIndex = -1;
         int bestValue = -1;
         for (int i = 0; i < words.length; i++){
-            System.out.println(words[i]);
             if (words[i].toString().length() > bestValue){
                 bestValue = words[i].toString().length();
                 bestIndex = i;
