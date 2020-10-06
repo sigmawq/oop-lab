@@ -155,13 +155,26 @@ public class TextManipulation {
         }
         return vowelsConsonants;
     }
-    public void PrintMostCommonWords(int count){
+    public void PrintMostCommonWordsAndTheLongestWord(){
         Object[] words = mostCommonWordsListMap.keySet().toArray();
         System.out.println(
                 "Five most common words: "
         );
+
         for (int i = 0; i < 5; i++){
             System.out.println(words[i]);
+            }
+        int bestIndex = -1;
+        int bestValue = -1;
+        for (int i = 0; i < words.length; i++){
+            System.out.println(words[i]);
+            if (words[i].toString().length() > bestValue){
+                bestValue = words[i].toString().length();
+                bestIndex = i;
+            }
         }
+        System.out.println(
+                "Longest word: " + words[bestIndex]
+        );
     }
 }

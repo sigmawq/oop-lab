@@ -36,6 +36,6 @@ public class Main3 {
         System.out.println(textManipulator.GetConsonantsAmount());
 
         // Advanced (9 || 10)
-        textManipulator.PrintMostCommonWords(1);
+        textManipulator.PrintMostCommonWordsAndTheLongestWord();
     }
 }
